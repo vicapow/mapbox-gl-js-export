@@ -1,0 +1,18 @@
+{
+  "name": "mapbox-gl-js-export",
+  "version": "0.0.0",
+  "description": "A simple app to test mapbox-gl image exporting",
+  "main": "index.js",
+  "scripts": {
+    "start": "budo index.js --serve=dist/bundle.js --live | bistre",
+    "build": "mkdir -p dist && browserify index.js > dist/bundle.js"
+  },
+  "author": "Victor Powell",
+  "license": "ISC",
+  "dependencies": {
+    "bistre": "^1.0.1",
+    "browserify": "^9.0.8",
+    "budo": "^4.0.0",
+    "st": "^0.5.4"
+  }
+}
